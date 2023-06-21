@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Замовлення на товар</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Замовлення на товар</h1>
+
+    <form action="#" method="post">
+      <label for="bank_account">Номер банківського рахунку:</label><br />
+      <input
+        type="text"
+        id="bank_account"
+        name="bank_account"
+        required
+      /><br /><br />
+
+      <label for="personal_id">Особистий номер користувача:</label><br />
+      <input
+        type="text"
+        id="personal_id"
+        name="personal_id"
+        required
+      /><br /><br />
+
+      <label for="products">Список товарів:</label><br />
+      <input type="checkbox" id="product1" name="products" value="product1" />
+      <label for="product1">Товар 1</label><br />
+      <input type="checkbox" id="product2" name="products" value="product2" />
+      <label for="product2">Товар 2</label><br />
+      <input type="checkbox" id="product3" name="products" value="product3" />
+      <label for="product3">Товар 3</label><br />
+      <input type="checkbox" id="product4" name="products" value="product4" />
+      <label for="product4">Товар 4</label><br /><br />
+
+      <label for="comments">Коментарі користувача:</label><br />
+      <textarea id="comments" name="comments" rows="4" cols="30"></textarea
+      ><br /><br />
+
+      <label for="payment_type">Вид оплати:</label><br />
+      <input type="radio" id="cash_payment" name="payment_type" value="cash" />
+      <label for="cash_payment">Готівковий розрахунок</label><br />
+      <input
+        type="radio"
+        id="noncash_payment"
+        name="payment_type"
+        value="noncash"
+      />
+      <label for="noncash_payment">Безготівковий розрахунок</label><br /><br />
+
+      <label for="additional_info">Додаткова інформація:</label><br />
+      <input
+        type="checkbox"
+        id="account_balance"
+        name="additional_info"
+        value="account_balance"
+      />
+      <label for="account_balance">Залишки на рахунку</label><br />
+      <input
+        type="checkbox"
+        id="payment_history"
+        name="additional_info"
+        value="payment_history"
+      />
+      <label for="payment_history">Список останніх виплат</label><br /><br />
+
+      <input type="submit" value="Замовити" />
+    </form>
+  </body>
+</html>
