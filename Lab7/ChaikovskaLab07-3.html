@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Анкета</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <form action="#" target="_blank" method="post">
+      <table
+        border="1"
+        cellspacing="5"
+        cellpadding="5"
+        style="background-color: lightblue; width: 35%"
+      >
+        <tr>
+          <td colspan="3">
+            <h1 style="color: red; text-align: center">Анкета</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td><label for="last_name">Прізвище</label></td>
+          <td>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              required
+              style="width: 100%; box-sizing: border-box"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td><label for="middle_name">Ім'я по батькові</label></td>
+          <td>
+            <input
+              type="text"
+              id="middle_name"
+              name="middle_name"
+              required
+              style="width: 100%; box-sizing: border-box"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td><label for="birth_date">Число і рік народження</label></td>
+          <td>
+            <input
+              type="text"
+              id="birth_date"
+              name="birth_date"
+              required
+              style="width: 100%; box-sizing: border-box"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td><label for="home_address">Домашня адреса</label></td>
+          <td>
+            <input
+              type="text"
+              id="home_address"
+              name="home_address"
+              required
+              style="width: 100%; box-sizing: border-box"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>
+            <label for="education_workplace">Місце навчання(роботи)</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="education_workplace"
+              name="education_workplace"
+              required
+              style="width: 100%; box-sizing: border-box"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td><label for="phone_number">Домашній(робочий) телефон</label></td>
+          <td>
+            <input
+              type="text"
+              id="phone_number"
+              name="phone_number"
+              required
+              style="width: 100%; box-sizing: border-box"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td><label for="email">E-mail</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              style="width: 100%; box-sizing: border-box"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">8.</td>
+          <td valign="top">Область наукових інтересів</td>
+          <td align="center">
+            1.
+            <input type="text" id="interest1" name="interest1" required /><br />
+            2. <input type="text" id="interest2" name="interest2" /><br />
+            3. <input type="text" id="interest3" name="interest3" /><br />
+            4. <input type="text" id="interest4" name="interest4" /><br />
+            5. <input type="text" id="interest5" name="interest5" /><br />
+            6. <input type="text" id="interest6" name="interest6" /><br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input type="reset" value="Відмінити введення" /><br /><br />
+            <input
+              type="submit"
+              value="Надіслати дані та перейти до 2 етапу реєстрації"
+            /><br /><br />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
