@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style>
+      .left-header,
+      .right-header,
+      .left-menu,
+      .content,
+      .right-menu,
+      .left-footer,
+      .right-footer {
+        text-align: center;
+        font-size: 18px;
+        border: 1px solid gray;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .left-header {
+        background-color: #ffefd5;
+      }
+
+      .right-header {
+        color: red;
+      }
+
+      .left-footer {
+        color: blue;
+      }
+
+      .right-footer {
+        background-color: #ffefd5;
+      }
+
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        .left-header {
+          background-color: transparent;
+        }
+
+        .right-header {
+          color: black;
+        }
+
+        .left-footer {
+          color: black;
+        }
+
+        .right-footer {
+          background-color: transparent;
+        }
+
+        .content {
+          background-color: #f08080;
+        }
+
+        .right-header {
+          background-color: #f08080;
+        }
+
+        .left-footer {
+          background-color: #f08080;
+        }
+      }
+
+      @media screen and (max-width: 991px) and (min-width: 768px) {
+        .left-header {
+          background-color: transparent;
+        }
+
+        .right-header {
+          color: black;
+          background-color: transparent;
+        }
+
+        .left-menu {
+          background-color: rgb(248, 136, 248);
+        }
+
+        .right-menu {
+          background-color: rgb(248, 136, 248);
+        }
+
+        .left-footer {
+          color: black;
+        }
+
+        .right-footer {
+          background-color: transparent;
+        }
+
+        .content {
+          background-color: transparent;
+        }
+
+        .right-header {
+          background-color: transparent;
+        }
+
+        .left-footer {
+          background-color: transparent;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        h1 {
+          color: green;
+        }
+
+        .left-header {
+          background-color: transparent;
+        }
+
+        .right-header {
+          color: black;
+          background-color: transparent;
+        }
+
+        .left-menu {
+          background-color: transparent;
+        }
+
+        .right-menu {
+          background-color: transparent;
+        }
+
+        .left-footer {
+          color: black;
+        }
+
+        .right-footer {
+          background-color: transparent;
+        }
+
+        .content {
+          background-color: transparent;
+        }
+
+        .right-header {
+          background-color: transparent;
+        }
+
+        .left-footer {
+          background-color: transparent;
+        }
+      }
+    </style>
+    <title>Task 1</title>
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-xl-8 col-lg-4 col-md-6 left-header">
+          <h1>Left Header</h1>
+        </div>
+        <div class="col-xl-4 col-lg-8 col-md-6 right-header">
+          <h1>Right Header</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 left-menu">
+          <h1>Left Menu</h1>
+        </div>
+        <div class="col-xl-8 col-lg-8 content">
+          <main>
+            <h1>Content</h1>
+          </main>
+        </div>
+        <div class="col-xl-2 col-lg-2 right-menu">
+          <h1>Right Menu</h1>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-xl-3 col-lg-8 col-md-6 left-footer">
+          <h1>Left Footer</h1>
+        </div>
+        <div class="col-xl-9 col-lg-4 col-md-6 right-footer">
+          <h1>Right Footer</h1>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
