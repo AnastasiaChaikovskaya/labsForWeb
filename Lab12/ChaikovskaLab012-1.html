@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Мій блог</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__title title-header">
+            <h1 class="title-header__my-blog">Мій особистий блог</h1>
+            <h2 class="title-header__author">Владислав Бублик</h2>
+          </div>
+          <div class="header__auth auth-header">
+            <button class="auth-header__log-in" name="log-in">Вхід</button>
+            <button class="auth-header__sign-up" name="sign-up">
+              Реєстрація
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__container">
+          <div class="main__block">
+            <h3 class="block__create">Create a Repository</h3>
+            <p class="block__description">
+              From scratch -- Create a new local repository
+            </p>
+            <p class="block__command">$ git init [project name]</p>
+            <p class="block__description">
+              Download from an existing repository
+            </p>
+            <p class="block__command">$ git clone my_url</p>
+
+            <h3 class="block__observe">Observe your Repository</h3>
+            <p class="block__description">
+              List new or modified files not yet commited
+            </p>
+            <p class="block__command">$ git status</p>
+            <p class="block__description">
+              Show the changes to files not yet staged
+            </p>
+            <p class="block__command">$ git diff</p>
+            <p class="block__description">Show the changes to staged files</p>
+            <p class="block__command">$ git diff --cached</p>
+            <p class="block__description">
+              Show all staged abd unstaged file changes
+            </p>
+            <p class="block__command">$ git diff HEAD</p>
+            <p class="block__description">
+              Show the changes between two commit ids
+            </p>
+            <p class="block__command">$ git commit1 commit2</p>
+            <p class="block__description">
+              List the change dates and authors for a file
+            </p>
+            <p class="block__command">$ git blame [file]</p>
+            <p class="block__description">
+              Show the file changes for a commit id and/or file
+            </p>
+            <p class="block__command">$ git show [commit]:[file]</p>
+            <p class="block__description">Show full changes history</p>
+            <p class="block__command">$ git log</p>
+            <p class="block__description">
+              Show change history for file/directory including diffs
+            </p>
+            <p class="block__command">$ git log -p [file/directory]</p>
+          </div>
+          <div class="main__block">
+            <h3 class="block__cworking">Working with Branches</h3>
+            <p class="block__description">List all local branches</p>
+            <p class="block__command">$ git branch</p>
+            <p class="block__description">List all local and remote branches</p>
+            <p class="block__command">$ git branch -av</p>
+            <p class="block__description">
+              Switch to a branch, my_branch, and update working directory
+            </p>
+            <p class="block__command">$ git checkout my_branch</p>
+            <p class="block__description">
+              Create a new branch called new_branch
+            </p>
+            <p class="block__command">$ git branch new_branch</p>
+            <p class="block__description">
+              Delete the branch called new_branch
+            </p>
+            <p class="block__command">$ git branch -d new_branch</p>
+            <p class="block__description">Merge branch-a into branch_b</p>
+            <p class="block__command">$ git checkout branch_b</p>
+            <p class="block__command">$ git merge branch_a</p>
+            <p class="block__description">Rag the current commit</p>
+            <p class="block__command">$ git tag my_tag</p>
+          </div>
+          <div class="main__block">
+            <h3 class="block__change">Make a change</h3>
+            <p class="block__description">Stages the file, ready for commit</p>
+            <p class="block__command">$ git add [file]</p>
+            <p class="block__description">
+              Stages tall changed files, ready for commit
+            </p>
+            <p class="block__command">$ git add</p>
+            <p class="block__description">
+              Commit all staged files to versioned history
+            </p>
+            <p class="block__command">$ git commit -m "commit message"</p>
+            <p class="block__description">
+              Commit all your tracked files to versioned history
+            </p>
+            <p class="block__command">$ git commit -am "commit message"</p>
+            <p class="block__description">
+              Unstages file, keeping the file changes
+            </p>
+            <p class="block__command">$ git rest [file]"</p>
+            <p class="block__description">
+              Revert everything to the last commit
+            </p>
+            <p class="block__command">$ git rest --hard"</p>
+          </div>
+          <div class="main__block">
+            <h3 class="block__synchronize">Synchronize</h3>
+            <p class="block__description">
+              Fet the latest changes from origin (no merge)
+            </p>
+            <p class="block__command">$ git fetch</p>
+            <p class="block__description">
+              Fetch the latest changes from origin and merge
+            </p>
+            <p class="block__command">$ git pull</p>
+            <p class="block__description">
+              Fetch the latest changes from origin and rebase
+            </p>
+            <p class="block__command">$ git pull --rebase</p>
+            <p class="block__description">Push local changes to the origin</p>
+            <p class="block__command">$ git push</p>
+
+            <h3 class="block__finally">Finally!</h3>
+            <p class="block__description">When in doubt, use git help</p>
+            <p class="block__command">$ git command --help</p>
+            <br />
+            <p class="block__description">
+              Or visit
+              <a href="https://training.github.com/" class="block__link"
+                >https://training.github.com/</a
+              >
+              for oficcial GitHub training.
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__license">
+            ©Всі права захищені.<br />
+            розробник: курсант 281 навчальної групи Бублик В.О.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
