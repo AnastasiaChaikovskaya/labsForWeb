@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Приклад 9</title>
+  </head>
+
+  <body>
+    <h2 align="center">Динамічне змінення колірного фону</h2>
+    <script>
+      function changeColor() {
+        var colors = ["red", "green", "blue", "yellow", "orange", "purple"];
+        var randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = randomColor;
+      }
+      setInterval(changeColor, 3000);
+    </script>
+  </body>
+</html>
