@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Приклад 8</title>
+    <meta charset="UTF-8" />
+    <script>
+      function updateTime() {
+        var d = new Date();
+        var time = d.toLocaleTimeString();
+        document.getElementById("clock").innerHTML = time;
+      }
+      setInterval(updateTime, 1000);
+    </script>
+  </head>
+
+  <body>
+    <h2 align="center">Час оновлюється кожну секунду</h2>
+    <div id="clock" align="center"></div>
+  </body>
+</html>
